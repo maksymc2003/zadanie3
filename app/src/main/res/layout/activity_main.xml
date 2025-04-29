@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="138dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/and"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="138dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/nand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="138dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="138dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/nor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="138dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/xor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="138dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/xnor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ToggleButton
+        android:id="@+id/andA"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="ToggleButton"
+        android:textOff="0"
+        android:textOn = "1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/nandA"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="ToggleButton"
+        android:textOff="0"
+        android:textOn="1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/andB" />
+
+    <ToggleButton
+        android:id="@+id/nandB"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:text="ToggleButton"
+        android:textOff="0"
+        android:textOn="1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/nandA" />
+
+    <ToggleButton
+        android:id="@+id/orA"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="ToggleButton"
+        android:textOff="0"
+        android:textOn="1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/nandB" />
+
+    <ToggleButton
+        android:id="@+id/norA"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="ToggleButton"
+        android:textOff="0"
+        android:textOn="1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/orB" />
+
+    <ToggleButton
+        android:id="@+id/xorA"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="ToggleButton"
+        android:textOff="0"
+        android:textOn="1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/norB" />
+
+    <ToggleButton
+        android:id="@+id/xnorA"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="ToggleButton"
+        android:textOff="0"
+        android:textOn="1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/xorB" />
+
+    <ToggleButton
+        android:id="@+id/xnorB"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:text="ToggleButton"
+        android:textOff="0"
+        android:textOn="1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/xnorA" />
+
+    <ToggleButton
+        android:id="@+id/xorB"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:text="ToggleButton"
+        android:textOff="0"
+        android:textOn="1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/xorA" />
+
+    <ToggleButton
+        android:id="@+id/norB"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:text="ToggleButton"
+        android:textOff="0"
+        android:textOn="1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/norA" />
+
+    <ToggleButton
+        android:id="@+id/orB"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:text="ToggleButton"
+        android:textOff="0"
+        android:textOn="1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/orA" />
+
+    <ToggleButton
+        android:id="@+id/andB"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:textOff="0"
+        android:textOn = "1"
+        android:text="ToggleButton"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/andA" />
+
+    <TextView
+        android:id="@+id/andOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nandOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/andOUT" />
+
+    <TextView
+        android:id="@+id/orOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/nandOUT" />
+
+    <TextView
+        android:id="@+id/norOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:text="1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/nandOUT" />
+
+    <TextView
+        android:id="@+id/xorOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/norOUT" />
+
+    <TextView
+        android:id="@+id/xnorOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/xorOUT" />
+</androidx.constraintlayout.widget.ConstraintLayout>
